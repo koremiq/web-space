@@ -63,7 +63,7 @@ img {
             margin: 0 4px;
             height: 14px;
             color: var(--col-base-l);
-            line-height: 0.5;
+            line-height: 0.7;
         }
     }
 
@@ -94,12 +94,13 @@ img {
     color: var(--col-text);
     text-decoration: none;
     text-align: center;
+    border-left: 4px solid var(--col-base);
+    border-right: 4px solid var(--col-base);
     background: var(--col-base);
 
     &:hover {
         color: var(--btn-col);
-        border-left: 4px solid var(--btn-col);
-        border-right: 4px solid var(--btn-col);
+        border-color: var(--btn-col);
         background: var(--btn-col-l);
     }
 
