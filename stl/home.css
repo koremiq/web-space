@@ -6,8 +6,8 @@
         "nav ttl ttl"
         "nav inf abt"
         "xxx inf msg"
-        "msc yyy wrn";
-    
+        "msc img wrn";
+
     width: fit-content;
     margin: 16px auto;
 }
@@ -55,4 +55,8 @@
     #msc-img {
         width: 128px;
     }
+}
+
+.wdw-img {
+    grid-area: img;
 }
