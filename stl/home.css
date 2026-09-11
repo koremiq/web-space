@@ -1,16 +1,17 @@
 .pge {
-    display: grid;
-    gap: 16px;
     grid-template-columns: 200px 800px 400px;
     grid-template-areas:
         "nav ttl ttl"
         "nav inf abt"
         "xxx inf msg"
         "msc img wrn";
-
-    width: fit-content;
-    margin: 16px auto;
 }
+
+body {
+    background: url("/img/home/background.png");
+}
+
+/* windows */
 
 .ttl {
     grid-area: ttl;
@@ -26,6 +27,16 @@
 
 .wdw-abt {
     grid-area: abt;
+
+    .sld {
+        position: relative;
+    }
+
+    #shw:hover {
+        .hid {
+            transform: translate(var(--hid-x), var(--hid-y)) rotate(var(--hid-r));
+        }
+    }
 }
 
 .wdw-msg {
@@ -46,14 +57,20 @@
 
     .cnt {
         align-items: center;
+
+        h3 {
+            width: 100%;
+        }
+
+        #msc-img {
+            width: 128px;
+        }
     }
 
-    h3 {
-        width: 100%;
-    }
-
-    #msc-img {
-        width: 128px;
+    &:hover {
+        .hid {
+            transform: translate(var(--hid-x), var(--hid-y)) rotate(var(--hid-r));
+        }
     }
 }
 
